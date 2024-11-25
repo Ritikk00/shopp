@@ -1,0 +1,53 @@
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.header-container {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient for a trendy shopping look */
+  color: #fff; /* White text */
+  text-align: center; /* Center align the text */
+  padding: 20px 15px; /* Add some padding for spacing */
+  border-bottom: 2px solid #f37b5d; /* Subtle bottom border for separation */
+}
+
+/* Header Title */
+.header-title {
+  font-size: 2.5rem; /* Large heading */
+  font-family: 'Roboto', sans-serif; /* Clean font for a modern look */
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablet devices */
+  .header-title {
+    font-size: 2rem; /* Slightly smaller font for tablets */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  .header-container {
+    padding: 15px 10px; /* Reduce padding */
+  }
+
+  .header-title {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+

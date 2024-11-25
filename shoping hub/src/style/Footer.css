@@ -1,0 +1,115 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%; /* Ensures full height */
+  }
+  
+  #root {
+    min-height: 100%; /* Works for React apps */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Main App Layout */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  /* Footer Styles */
+  .footer-container {
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Thin footer */
+    text-align: center;
+    font-size: 0.85rem; /* Small, clean font */
+    border-top: 1px solid #333; /* Separator at the top */
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
+  /* Footer Top Section */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Responsive for smaller screens */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Sections */
+  .footer-about, .footer-links, .footer-social {
+    flex: 1 1 200px; /* Responsive column layout */
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .footer-about h3, .footer-links h3, .footer-social h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .footer-about p, .footer-links ul, .footer-social .social-icons {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #ccc;
+  }
+  
+  /* Quick Links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    color: #ffa500;
+    text-decoration: none;
+  }
+  
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media */
+  .footer-social .social-icons a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #ffa500;
+  }
+  
+  .footer-social .social-icons a:hover {
+    color: #ff7e5f;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column; /* Stacks sections vertically on small screens */
+      align-items: center;
+    }
+  
+    .footer-about, .footer-links, .footer-social {
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  
